@@ -1,0 +1,20 @@
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\Hotel Administration Information System.exe
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\Hotel Administration Information System.deps.json
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\Hotel Administration Information System.runtimeconfig.json
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\Hotel Administration Information System.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\Hotel Administration Information System.pdb
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.csproj.AssemblyReference.cache
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.csproj.GenerateResource.cache
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.AssemblyInfoInputs.cache
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.AssemblyInfo.cs
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.csproj.CoreCompileInputs.cache
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\refint\Hotel Administration Information System.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.pdb
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.genruntimeconfig.cache
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\ref\Hotel Administration Information System.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Properties.Resources.resources
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Rooms.resources
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Types.resources
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Customers.resources

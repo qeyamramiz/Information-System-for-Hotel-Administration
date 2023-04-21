@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Hotel Administration Information System/1.0.0": {
+        "runtime": {
+          "Hotel Administration Information System.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hotel Administration Information System/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
