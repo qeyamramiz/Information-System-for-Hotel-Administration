@@ -30,44 +30,44 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rooms));
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             panel1 = new Panel();
             panel2 = new Panel();
-            richTextBox8 = new RichTextBox();
+            label11 = new Label();
+            label1 = new Label();
             pictureBox7 = new PictureBox();
-            richTextBox1 = new RichTextBox();
             panel3 = new Panel();
-            panel9 = new Panel();
-            richTextBox7 = new RichTextBox();
-            pictureBox6 = new PictureBox();
             panel8 = new Panel();
-            richTextBox6 = new RichTextBox();
+            label6 = new Label();
             pictureBox5 = new PictureBox();
             panel7 = new Panel();
-            richTextBox5 = new RichTextBox();
+            label5 = new Label();
             pictureBox4 = new PictureBox();
             panel6 = new Panel();
-            richTextBox4 = new RichTextBox();
+            label4 = new Label();
             pictureBox3 = new PictureBox();
             panel5 = new Panel();
-            richTextBox3 = new RichTextBox();
+            label2 = new Label();
             pictureBox2 = new PictureBox();
+            label3 = new Label();
             panel4 = new Panel();
-            richTextBox2 = new RichTextBox();
             pictureBox1 = new PictureBox();
-            richTextBox9 = new RichTextBox();
+            room_name = new RichTextBox();
             contextMenuStrip1 = new ContextMenuStrip(components);
-            richTextBox10 = new RichTextBox();
-            richTextBox11 = new RichTextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            room_type = new ComboBox();
+            room_status = new ComboBox();
+            Save_button = new Button();
+            Edit_button = new Button();
+            Delete_button = new Button();
+            RoomsList = new DataGridView();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel3.SuspendLayout();
-            panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel7.SuspendLayout();
@@ -78,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)RoomsList).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -94,29 +95,43 @@
             // panel2
             // 
             panel2.BackColor = Color.SteelBlue;
-            panel2.Controls.Add(richTextBox8);
+            panel2.Controls.Add(label11);
+            panel2.Controls.Add(label1);
             panel2.Controls.Add(pictureBox7);
-            panel2.Controls.Add(richTextBox1);
             panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(5);
             panel2.Name = "panel2";
             panel2.Size = new Size(2466, 115);
             panel2.TabIndex = 1;
             // 
-            // richTextBox8
+            // label11
             // 
-            richTextBox8.BackColor = Color.SteelBlue;
-            richTextBox8.BorderStyle = BorderStyle.None;
-            richTextBox8.Font = new Font("Comic Sans MS", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox8.ForeColor = Color.White;
-            richTextBox8.Location = new Point(1438, 32);
-            richTextBox8.Name = "richTextBox8";
-            richTextBox8.Size = new Size(89, 40);
-            richTextBox8.TabIndex = 6;
-            richTextBox8.Text = "Logout";
+            label11.AutoSize = true;
+            label11.Cursor = Cursors.Hand;
+            label11.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = SystemColors.Control;
+            label11.Location = new Point(1422, 32);
+            label11.Name = "label11";
+            label11.Size = new Size(105, 39);
+            label11.TabIndex = 8;
+            label11.Text = "Logout";
+            label11.Click += label11_Click;
+            label11.MouseClick += label11_MouseClick;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Comic Sans MS", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(80, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(708, 48);
+            label1.TabIndex = 7;
+            label1.Text = "Hotel Administration Information System";
             // 
             // pictureBox7
             // 
+            pictureBox7.Cursor = Cursors.Hand;
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(1533, 32);
             pictureBox7.Name = "pictureBox7";
@@ -124,24 +139,11 @@
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 5;
             pictureBox7.TabStop = false;
-            // 
-            // richTextBox1
-            // 
-            richTextBox1.BackColor = Color.SteelBlue;
-            richTextBox1.BorderStyle = BorderStyle.None;
-            richTextBox1.Font = new Font("Comic Sans MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox1.ForeColor = Color.White;
-            richTextBox1.Location = new Point(37, 19);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(733, 73);
-            richTextBox1.TabIndex = 0;
-            richTextBox1.Text = "Hotel Administration Information System";
-            richTextBox1.TextChanged += richTextBox1_TextChanged;
+            pictureBox7.MouseClick += pictureBox7_MouseClick;
             // 
             // panel3
             // 
             panel3.BackColor = Color.Gainsboro;
-            panel3.Controls.Add(panel9);
             panel3.Controls.Add(panel8);
             panel3.Controls.Add(panel7);
             panel3.Controls.Add(panel6);
@@ -152,59 +154,28 @@
             panel3.Size = new Size(416, 785);
             panel3.TabIndex = 2;
             // 
-            // panel9
-            // 
-            panel9.BackColor = Color.DarkGray;
-            panel9.Controls.Add(richTextBox7);
-            panel9.Controls.Add(pictureBox6);
-            panel9.Location = new Point(0, 377);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(416, 72);
-            panel9.TabIndex = 9;
-            // 
-            // richTextBox7
-            // 
-            richTextBox7.BackColor = Color.DarkGray;
-            richTextBox7.BorderStyle = BorderStyle.None;
-            richTextBox7.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox7.ForeColor = Color.White;
-            richTextBox7.Location = new Point(118, 14);
-            richTextBox7.Name = "richTextBox7";
-            richTextBox7.Size = new Size(177, 50);
-            richTextBox7.TabIndex = 0;
-            richTextBox7.Text = "Dashboard";
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(42, 15);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(40, 40);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 4;
-            pictureBox6.TabStop = false;
-            // 
             // panel8
             // 
             panel8.BackColor = Color.DarkGray;
-            panel8.Controls.Add(richTextBox6);
+            panel8.Controls.Add(label6);
             panel8.Controls.Add(pictureBox5);
             panel8.Location = new Point(0, 301);
             panel8.Name = "panel8";
             panel8.Size = new Size(416, 72);
             panel8.TabIndex = 8;
             // 
-            // richTextBox6
+            // label6
             // 
-            richTextBox6.BackColor = Color.DarkGray;
-            richTextBox6.BorderStyle = BorderStyle.None;
-            richTextBox6.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox6.ForeColor = Color.White;
-            richTextBox6.Location = new Point(118, 14);
-            richTextBox6.Name = "richTextBox6";
-            richTextBox6.Size = new Size(177, 50);
-            richTextBox6.TabIndex = 0;
-            richTextBox6.Text = "Bookings";
+            label6.AutoSize = true;
+            label6.Cursor = Cursors.Hand;
+            label6.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.Window;
+            label6.Location = new Point(120, 14);
+            label6.Name = "label6";
+            label6.Size = new Size(132, 39);
+            label6.TabIndex = 12;
+            label6.Text = "Bookings";
+            label6.MouseClick += label6_MouseClick;
             // 
             // pictureBox5
             // 
@@ -219,24 +190,25 @@
             // panel7
             // 
             panel7.BackColor = Color.DarkGray;
-            panel7.Controls.Add(richTextBox5);
+            panel7.Controls.Add(label5);
             panel7.Controls.Add(pictureBox4);
             panel7.Location = new Point(0, 225);
             panel7.Name = "panel7";
             panel7.Size = new Size(416, 72);
             panel7.TabIndex = 7;
             // 
-            // richTextBox5
+            // label5
             // 
-            richTextBox5.BackColor = Color.DarkGray;
-            richTextBox5.BorderStyle = BorderStyle.None;
-            richTextBox5.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox5.ForeColor = Color.White;
-            richTextBox5.Location = new Point(118, 14);
-            richTextBox5.Name = "richTextBox5";
-            richTextBox5.Size = new Size(177, 50);
-            richTextBox5.TabIndex = 0;
-            richTextBox5.Text = "Customers";
+            label5.AutoSize = true;
+            label5.Cursor = Cursors.Hand;
+            label5.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.Window;
+            label5.Location = new Point(120, 14);
+            label5.Name = "label5";
+            label5.Size = new Size(156, 39);
+            label5.TabIndex = 11;
+            label5.Text = "Customers";
+            label5.MouseClick += label5_MouseClick;
             // 
             // pictureBox4
             // 
@@ -251,24 +223,26 @@
             // panel6
             // 
             panel6.BackColor = Color.DarkGray;
-            panel6.Controls.Add(richTextBox4);
+            panel6.Controls.Add(label4);
             panel6.Controls.Add(pictureBox3);
             panel6.Location = new Point(0, 150);
             panel6.Name = "panel6";
             panel6.Size = new Size(416, 72);
             panel6.TabIndex = 6;
             // 
-            // richTextBox4
+            // label4
             // 
-            richTextBox4.BackColor = Color.DarkGray;
-            richTextBox4.BorderStyle = BorderStyle.None;
-            richTextBox4.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox4.ForeColor = Color.White;
-            richTextBox4.Location = new Point(118, 14);
-            richTextBox4.Name = "richTextBox4";
-            richTextBox4.Size = new Size(177, 50);
-            richTextBox4.TabIndex = 0;
-            richTextBox4.Text = "Users";
+            label4.AutoSize = true;
+            label4.Cursor = Cursors.Hand;
+            label4.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.Window;
+            label4.Location = new Point(120, 16);
+            label4.Name = "label4";
+            label4.Size = new Size(95, 39);
+            label4.TabIndex = 10;
+            label4.Text = "Users";
+            label4.Click += label4_Click;
+            label4.MouseClick += label4_MouseClick;
             // 
             // pictureBox3
             // 
@@ -283,24 +257,26 @@
             // panel5
             // 
             panel5.BackColor = Color.DarkGray;
-            panel5.Controls.Add(richTextBox3);
+            panel5.Controls.Add(label2);
             panel5.Controls.Add(pictureBox2);
             panel5.Location = new Point(0, 75);
             panel5.Name = "panel5";
             panel5.Size = new Size(416, 72);
             panel5.TabIndex = 5;
             // 
-            // richTextBox3
+            // label2
             // 
-            richTextBox3.BackColor = Color.DarkGray;
-            richTextBox3.BorderStyle = BorderStyle.None;
-            richTextBox3.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox3.ForeColor = Color.White;
-            richTextBox3.Location = new Point(118, 14);
-            richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(177, 50);
-            richTextBox3.TabIndex = 0;
-            richTextBox3.Text = "Categories";
+            label2.AutoSize = true;
+            label2.Cursor = Cursors.Hand;
+            label2.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.Window;
+            label2.Location = new Point(120, 15);
+            label2.Name = "label2";
+            label2.Size = new Size(160, 39);
+            label2.TabIndex = 8;
+            label2.Text = "Categories";
+            label2.Click += label2_Click;
+            label2.MouseClick += label2_MouseClick;
             // 
             // pictureBox2
             // 
@@ -312,27 +288,29 @@
             pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Cursor = Cursors.Hand;
+            label3.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = SystemColors.Window;
+            label3.Location = new Point(120, 14);
+            label3.Name = "label3";
+            label3.Size = new Size(101, 39);
+            label3.TabIndex = 9;
+            label3.Text = "Rooms";
+            label3.Click += label3_Click;
+            // 
             // panel4
             // 
-            panel4.BackColor = Color.DarkGray;
-            panel4.Controls.Add(richTextBox2);
+            panel4.BackColor = Color.SteelBlue;
+            panel4.Controls.Add(label3);
             panel4.Controls.Add(pictureBox1);
             panel4.Location = new Point(0, 116);
             panel4.Name = "panel4";
             panel4.Size = new Size(416, 72);
             panel4.TabIndex = 3;
-            // 
-            // richTextBox2
-            // 
-            richTextBox2.BackColor = Color.DarkGray;
-            richTextBox2.BorderStyle = BorderStyle.None;
-            richTextBox2.Font = new Font("Comic Sans MS", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox2.ForeColor = Color.White;
-            richTextBox2.Location = new Point(118, 14);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(125, 50);
-            richTextBox2.TabIndex = 0;
-            richTextBox2.Text = "Rooms";
+            panel4.Paint += panel4_Paint;
             // 
             // pictureBox1
             // 
@@ -344,15 +322,15 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
-            // richTextBox9
+            // room_name
             // 
-            richTextBox9.BackColor = Color.FromArgb(224, 224, 224);
-            richTextBox9.BorderStyle = BorderStyle.FixedSingle;
-            richTextBox9.Location = new Point(672, 243);
-            richTextBox9.Name = "richTextBox9";
-            richTextBox9.Size = new Size(287, 41);
-            richTextBox9.TabIndex = 4;
-            richTextBox9.Text = "";
+            room_name.BackColor = Color.FromArgb(224, 224, 224);
+            room_name.BorderStyle = BorderStyle.FixedSingle;
+            room_name.Location = new Point(672, 243);
+            room_name.Name = "room_name";
+            room_name.Size = new Size(208, 41);
+            room_name.TabIndex = 4;
+            room_name.Text = "";
             // 
             // contextMenuStrip1
             // 
@@ -360,103 +338,170 @@
             contextMenuStrip1.Name = "contextMenuStrip1";
             contextMenuStrip1.Size = new Size(61, 4);
             // 
-            // richTextBox10
+            // room_type
             // 
-            richTextBox10.BackColor = SystemColors.Control;
-            richTextBox10.BorderStyle = BorderStyle.None;
-            richTextBox10.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox10.Location = new Point(508, 247);
-            richTextBox10.Name = "richTextBox10";
-            richTextBox10.Size = new Size(158, 40);
-            richTextBox10.TabIndex = 5;
-            richTextBox10.Text = "Room Name";
+            room_type.BackColor = SystemColors.Control;
+            room_type.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            room_type.FormattingEnabled = true;
+            room_type.Items.AddRange(new object[] { "Standard", "Single", "Double", "VIP" });
+            room_type.Location = new Point(1078, 243);
+            room_type.Name = "room_type";
+            room_type.Size = new Size(110, 37);
+            room_type.TabIndex = 7;
+            room_type.Text = "Room Type";
             // 
-            // richTextBox11
+            // room_status
             // 
-            richTextBox11.BackColor = SystemColors.Control;
-            richTextBox11.BorderStyle = BorderStyle.None;
-            richTextBox11.Font = new Font("Comic Sans MS", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            richTextBox11.Location = new Point(849, 148);
-            richTextBox11.Name = "richTextBox11";
-            richTextBox11.Size = new Size(396, 58);
-            richTextBox11.TabIndex = 6;
-            richTextBox11.Text = "Room Management";
+            room_status.BackColor = SystemColors.Control;
+            room_status.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            room_status.FormattingEnabled = true;
+            room_status.Items.AddRange(new object[] { "Booked", "Available" });
+            room_status.Location = new Point(1386, 243);
+            room_status.Name = "room_status";
+            room_status.Size = new Size(151, 37);
+            room_status.TabIndex = 8;
+            room_status.Text = "Status";
             // 
-            // comboBox1
+            // Save_button
             // 
-            comboBox1.BackColor = SystemColors.Control;
-            comboBox1.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(1037, 243);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 37);
-            comboBox1.TabIndex = 7;
-            comboBox1.Text = "Room Type";
+            Save_button.BackColor = Color.SteelBlue;
+            Save_button.Cursor = Cursors.Hand;
+            Save_button.FlatStyle = FlatStyle.Flat;
+            Save_button.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            Save_button.ForeColor = Color.White;
+            Save_button.Location = new Point(755, 344);
+            Save_button.Name = "Save_button";
+            Save_button.Size = new Size(165, 45);
+            Save_button.TabIndex = 9;
+            Save_button.Text = "Save";
+            Save_button.UseVisualStyleBackColor = false;
+            Save_button.Click += save_button_Click;
             // 
-            // comboBox2
+            // Edit_button
             // 
-            comboBox2.BackColor = SystemColors.Control;
-            comboBox2.Font = new Font("Comic Sans MS", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Booked", "Available" });
-            comboBox2.Location = new Point(1261, 243);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(151, 37);
-            comboBox2.TabIndex = 8;
-            comboBox2.Text = "Status";
+            Edit_button.BackColor = Color.SteelBlue;
+            Edit_button.Cursor = Cursors.Hand;
+            Edit_button.FlatStyle = FlatStyle.Flat;
+            Edit_button.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            Edit_button.ForeColor = Color.White;
+            Edit_button.Location = new Point(971, 344);
+            Edit_button.Name = "Edit_button";
+            Edit_button.Size = new Size(165, 45);
+            Edit_button.TabIndex = 10;
+            Edit_button.Text = "Edit";
+            Edit_button.UseVisualStyleBackColor = false;
+            Edit_button.Click += Edit_button_Click;
             // 
-            // button1
+            // Delete_button
             // 
-            button1.BackColor = Color.SteelBlue;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(755, 344);
-            button1.Name = "button1";
-            button1.Size = new Size(165, 45);
-            button1.TabIndex = 9;
-            button1.Text = "Save";
-            button1.UseVisualStyleBackColor = false;
+            Delete_button.BackColor = Color.Crimson;
+            Delete_button.Cursor = Cursors.Hand;
+            Delete_button.FlatStyle = FlatStyle.Flat;
+            Delete_button.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            Delete_button.ForeColor = Color.White;
+            Delete_button.Location = new Point(1190, 344);
+            Delete_button.Name = "Delete_button";
+            Delete_button.Size = new Size(165, 45);
+            Delete_button.TabIndex = 11;
+            Delete_button.Text = "Delete";
+            Delete_button.UseVisualStyleBackColor = false;
+            Delete_button.Click += Delete_button_Click;
             // 
-            // button2
+            // RoomsList
             // 
-            button2.BackColor = Color.SteelBlue;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(971, 344);
-            button2.Name = "button2";
-            button2.Size = new Size(165, 45);
-            button2.TabIndex = 10;
-            button2.Text = "Edit";
-            button2.UseVisualStyleBackColor = false;
+            RoomsList.AllowUserToAddRows = false;
+            RoomsList.AllowUserToDeleteRows = false;
+            RoomsList.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            RoomsList.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            RoomsList.BackgroundColor = SystemColors.Control;
+            RoomsList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            RoomsList.Cursor = Cursors.Hand;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            RoomsList.DefaultCellStyle = dataGridViewCellStyle1;
+            RoomsList.Location = new Point(424, 467);
+            RoomsList.Name = "RoomsList";
+            RoomsList.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            RoomsList.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            RoomsList.RowHeadersWidth = 60;
+            RoomsList.RowTemplate.Height = 29;
+            RoomsList.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            RoomsList.Size = new Size(1180, 434);
+            RoomsList.TabIndex = 40;
+            RoomsList.CellContentClick += RoomsList_CellContentClick;
             // 
-            // button3
+            // label7
             // 
-            button3.BackColor = Color.Crimson;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(1190, 344);
-            button3.Name = "button3";
-            button3.Size = new Size(165, 45);
-            button3.TabIndex = 11;
-            button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = false;
+            label7.AutoSize = true;
+            label7.Font = new Font("Comic Sans MS", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = SystemColors.WindowText;
+            label7.Location = new Point(897, 140);
+            label7.Name = "label7";
+            label7.Size = new Size(321, 48);
+            label7.TabIndex = 8;
+            label7.Text = "Room Management";
             // 
-            // Form1
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = SystemColors.WindowText;
+            label8.Location = new Point(522, 246);
+            label8.Name = "label8";
+            label8.Size = new Size(144, 32);
+            label8.TabIndex = 43;
+            label8.Text = "Room Name";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = SystemColors.WindowText;
+            label9.Location = new Point(930, 246);
+            label9.Name = "label9";
+            label9.Size = new Size(135, 32);
+            label9.TabIndex = 44;
+            label9.Text = "Room Type";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Comic Sans MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = SystemColors.WindowText;
+            label10.Location = new Point(1220, 246);
+            label10.Name = "label10";
+            label10.Size = new Size(155, 32);
+            label10.TabIndex = 45;
+            label10.Text = "Room Status";
+            // 
+            // Rooms
             // 
             AutoScaleDimensions = new SizeF(14F, 31F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1600, 900);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(richTextBox11);
-            Controls.Add(richTextBox10);
-            Controls.Add(richTextBox9);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(RoomsList);
+            Controls.Add(Delete_button);
+            Controls.Add(Edit_button);
+            Controls.Add(Save_button);
+            Controls.Add(room_status);
+            Controls.Add(room_type);
+            Controls.Add(room_name);
             Controls.Add(panel4);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -464,24 +509,29 @@
             Font = new Font("Comic Sans MS", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(5);
-            Name = "Form1";
+            Name = "Rooms";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel3.ResumeLayout(false);
-            panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel8.ResumeLayout(false);
+            panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel7.ResumeLayout(false);
+            panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel6.ResumeLayout(false);
+            panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel5.ResumeLayout(false);
+            panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel4.ResumeLayout(false);
+            panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)RoomsList).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -491,35 +541,35 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private RichTextBox richTextBox1;
         private Panel panel4;
         private PictureBox pictureBox1;
-        private RichTextBox richTextBox2;
         private Panel panel5;
-        private RichTextBox richTextBox3;
         private PictureBox pictureBox2;
         private Panel panel6;
-        private RichTextBox richTextBox4;
         private PictureBox pictureBox3;
         private Panel panel7;
-        private RichTextBox richTextBox5;
         private PictureBox pictureBox4;
-        private Panel panel9;
-        private RichTextBox richTextBox7;
-        private PictureBox pictureBox6;
         private Panel panel8;
-        private RichTextBox richTextBox6;
         private PictureBox pictureBox5;
-        private RichTextBox richTextBox8;
         private PictureBox pictureBox7;
-        private RichTextBox richTextBox9;
+        private RichTextBox room_name;
         private ContextMenuStrip contextMenuStrip1;
-        private RichTextBox richTextBox10;
-        private RichTextBox richTextBox11;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private ComboBox room_type;
+        private ComboBox room_status;
+        private Button Save_button;
+        private Button Edit_button;
+        private Button Delete_button;
+        private DataGridView RoomsList;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
+        private Label label5;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private Label label11;
     }
 }

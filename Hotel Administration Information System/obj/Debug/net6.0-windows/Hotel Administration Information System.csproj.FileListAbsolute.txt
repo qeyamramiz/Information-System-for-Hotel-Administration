@@ -16,5 +16,15 @@ C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel A
 C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\ref\Hotel Administration Information System.dll
 C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Properties.Resources.resources
 C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Rooms.resources
-C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Types.resources
 C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Customers.resources
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Type.resources
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Users.resources
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Bookings.resources
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel Administration Information System.csproj.CopyComplete
+C:\Users\Samim Qeya\source\repos\Hotel Administration Information System\Hotel Administration Information System\obj\Debug\net6.0-windows\Hotel_Administration_Information_System.Login.resources

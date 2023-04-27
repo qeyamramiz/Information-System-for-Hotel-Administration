@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "EXHpKo5eGJl9Z2D9spPF/JHeASOuaezbVPcEDO0LEItXDxd74Lfv9jgHuWtg6ERun4otU5H6NguHyAA1SlkJxQ==",
+  "dgSpecHash": "SJcDjAuyNQhslCg8BHggUNXQqBGC3ODlkMXC79ADhy8ywLtN8XCtoQxD3jXSYZu+nQWKF/Jyk07lbPLhhZkHiA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Samim Qeya\\source\\repos\\Hotel Administration Information System\\Hotel Administration Information System\\Hotel Administration Information System.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Samim Qeya\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
